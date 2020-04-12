@@ -23,6 +23,10 @@ def cartProd(*args,repeat=1):
     pools = [pool for pool in args] * repeat
     result = [[]]
     for pool in pools:
+        # for x in result: 
+        #     print(x)
+        #     for y in pool:
+        #         result.append(x+[y])
         result = [x+[y] for x in result for y in pool]
     return result
 

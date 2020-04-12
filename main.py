@@ -2,7 +2,7 @@ import numpy as np
 from operations import *
 import time
 
-lst = [9,10,11,13]
+lst = [9,12,12,10]
 target = 24
 
 start_time = time.time()
@@ -12,6 +12,10 @@ if result == []:
 else:
     print("Total of",len(result), "solutions")
 print(time.time()-start_time)
+
+print("DONE")
+# print(cartProd([2,3,1],repeat = 2))
+
 
 
 
